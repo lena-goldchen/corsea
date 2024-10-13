@@ -1,0 +1,38 @@
+.blog {
+  margin-bottom: 150px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    max-width: 470px;
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 60px;
+  }
+
+  &__posts {
+    display: flex;
+    gap: 40px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__post {
+    flex-basis: 526px;
+
+    @include mobile {
+      flex-basis: 300px;
+    }
+  }
+}

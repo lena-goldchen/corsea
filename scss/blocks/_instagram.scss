@@ -1,0 +1,30 @@
+.instagram {
+  margin-bottom: 60px;
+
+  &__title,
+  &__subtitle {
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+  }
+
+  &__swiper {
+    margin: 0 auto;
+    overflow-x: hidden;
+    height: 310px;
+    width: 100%;
+    max-width: 1920px;
+  }
+
+  &__slide {
+    width: 310px !important;
+    height: 310px !important;
+    margin: 0 20px !important;
+  }
+}

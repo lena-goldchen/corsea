@@ -1,0 +1,22 @@
+.title {
+  @include fluid-text(35, 20);
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.title-big {
+  @include fluid-text(50, 24);
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.subtitle {
+  @include fluid-text(18, 12);
+  margin-inline: auto;
+  line-height: 1.6;
+  text-align: center;
+}

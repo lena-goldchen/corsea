@@ -1,0 +1,35 @@
+.widget {
+  background: url(./../images/widget/bg.jpg) top/cover no-repeat;
+  height: 634px;
+  margin-bottom: 150px;
+
+  @include tablet {
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    position: relative;
+    top: 47%;
+
+    @include tablet {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__title {
+    @include fluid-text(60, 30);
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+    // font-size: 60px;
+    line-height: 1.37;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+  }
+}

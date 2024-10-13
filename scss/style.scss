@@ -1,0 +1,28 @@
+@import "normalize";
+@import 'mixins';
+@import 'media';
+@import 'fonts';
+@import 'titles';
+@import 'variables';
+@import 'utils';
+@import 'globals';
+
+@import 'blocks/buttons';
+@import 'blocks/mobile-nav';
+@import 'blocks/swiper';
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/products';
+@import 'blocks/product';
+@import 'blocks/collections';
+@import 'blocks/collection';
+@import 'blocks/feedback';
+@import 'blocks/widget';
+@import 'blocks/blog';
+@import 'blocks/post';
+@import 'blocks/sign-up';
+@import 'blocks/artists';
+@import 'blocks/instagram';
+@import 'blocks/benefits';
+@import 'blocks/footer';

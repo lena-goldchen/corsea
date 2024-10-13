@@ -1,0 +1,105 @@
+.hero {
+  height: 100vh;
+  margin-top: -87px;
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    text-align: left;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-family: var(--font-family-base);
+    line-height: 1.2;
+    margin-bottom: 38px;
+  }
+
+  &__btn {
+    @include hover {
+      background-color: var(--color-dark-alt);
+      color: #ffffff;
+      border: 1px solid transparent;
+    }
+  }
+
+  &__slide {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include tablet {
+      background-position: center;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: var(--color-dark);
+      width: 1780px;
+      height: 1px;
+      left: 70px;
+      bottom: 70px;
+    }
+
+    &-inner {
+      position: absolute;
+      bottom: 155px;
+      left: 120px;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      @include tablet {
+        color: var(--color-light);
+        width: 200px;
+      }
+    }
+  }
+
+  &__swiper {
+    .swiper-pagination {
+      width: 300px;
+      margin: 0 auto;
+      display: none;
+      right: 0;
+      bottom: 30px;
+
+      @include desktop {
+        display: block;
+        width: 150px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      opacity: 0;
+      background-color: var(--color-light) !important;
+
+      @include desktop {
+        width: 7px;
+        height: 7px;
+        opacity: 0.5;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      @include desktop {
+        opacity: 1;
+        background-color: var(--color-light) !important;
+        border-radius: 50%;
+      }
+    }
+  }
+}

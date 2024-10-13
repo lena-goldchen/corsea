@@ -1,0 +1,62 @@
+.artists {
+  margin-bottom: 150px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include desktop {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding-inline: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 570px;
+
+    @include desktop {
+      padding-inline: 20px;
+    }
+  }
+
+  &__title {
+    line-height: 1.2;
+    color: var(--color-dark);
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color-dark);
+    margin-bottom: 54px;
+  }
+
+  &__btn {
+    margin-inline: auto;
+  }
+}

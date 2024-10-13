@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corsea</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-wide">
+      <div class="header__inner">
+        <a class="logo header__logo" href="#!">
+          <img class="logo__img" src="./images/logo.png" alt="Resonator">
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--active">
+              <a href="#!" class="nav__list-link">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#!" class="nav__list-link">Pages</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#!" class="nav__list-link">Shop</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#!" class="nav__list-link">Portfolio</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#!" class="nav__list-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="#!" class="search">
+            <span>Search</span>
+            <img src="./images/icons/search.svg" alt="">
+          </a>
+          <a href="#!" class="cart">
+            <span>Cart</span>
+            <img src="./images/icons/cart.svg" alt="">
+          </a>
+          <a href="#!" class="favorites">
+            <img src="./images/icons/favorites.svg" alt="">
+          </a>
+          <a href="#!" class="user">
+            <img src="./images/icons/user.svg" alt="">
+          </a>
+          <button class="btn mobile-nav-button">
+            <img class="mobile-nav-button__img" src="./images/icons/nav-btn.svg" alt="">
+          </button>
+
+          <div class="mobile-nav">
+            <ul class="mobile-nav__menu-list">
+              <li class="mobile-nav__menu-item header__menu-item--active">
+                <a href="#!" class="mobile-nav__menu-link">Home</a>
+              </li>
+              <li class="mobile-nav__menu-item">
+                <a href="#!" class="mobile-nav__menu-link">Pages</a>
+              </li>
+              <li class="mobile-nav__menu-item">
+                <a href="#!" class="mobile-nav__menu-link">Shop</a>
+              </li>
+              <li class="mobile-nav__menu-item">
+                <a href="#!" class="mobile-nav__menu-link">Portfolio</a>
+              </li>
+              <li class="mobile-nav__menu-item">
+                <a href="#!" class="mobile-nav__menu-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section hero hero__swiper swiper">
+    <div class="swiper-wrapper hero__wrapper">
+      <div class="swiper-slide hero__slide" style="background-image: url(./images/hero/hero-bg.jpg)">
+        <div class="hero__slide-inner">
+          <h2 class="title-big hero__title">Mixed Textiles</h2>
+          <p class="subtitle hero__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
+          <a href="#!" class="btn btn-shop">SHOP COLLECTION</a>
+        </div>
+      </div>
+      <div class="swiper-slide hero__slide" style="background-image: url(./images/hero/hero-bg.jpg)">
+        <div class="hero__slide-inner">
+          <h2 class="title-big hero__title">Mixed Textiles</h2>
+          <p class="subtitle hero__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
+          <a href="#!" class="btn btn-shop">SHOP COLLECTION</a>
+        </div>
+      </div>
+      <div class="swiper-slide hero__slide" style="background-image: url(./images/hero/hero-bg.jpg)">
+        <div class="hero__slide-inner">
+          <h2 class="title-big hero__title">Mixed Textiles</h2>
+          <p class="subtitle hero__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
+          <a href="#!" class="btn btn-shop">SHOP COLLECTION</a>
+        </div>
+      </div>
+      <div class="swiper-slide hero__slide" style="background-image: url(./images/hero/hero-bg.jpg)">
+        <div class="hero__slide-inner">
+          <h2 class="title-big hero__title">Mixed Textiles</h2>
+          <p class="subtitle hero__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
+          <a href="#!" class="btn btn-shop">SHOP COLLECTION</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="products__inner">
+        <p class="products__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud.
+        </p>
+        <h1 class="products__title visually-hidden">Products</h1>
+        <ul class="products__list">
+          <li class="products__list-item active" data-tab="all">All Products</li>
+          <li class="products__list-item" data-tab="tab-1">Lifestyle</li>
+          <li class="products__list-item" data-tab="tab-2">Brand</li>
+          <li class="products__list-item" data-tab="tab-3">Outwear</li>
+        </ul>
+
+        <div class="products__wrapper" data-tab-content id="all">
+          <div class="product__card product__card--new">
+            <img class="product__img" src="./images/products/1.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Jacket</h3>
+                <p class="product__price">$350.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/2.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Leather Jacket</h3>
+                <p class="product__price">$300.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card product__card--sale">
+            <img class="product__img" src="./images/products/3.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Outfit</h3>
+                <p class="product__price">$220.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/4.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">T-Shirt</h3>
+                <p class="product__price">$120.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/5.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Vest</h3>
+                <p class="product__price">$85.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/6.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">OTK Boots</h3>
+                <p class="product__price">$270.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card product__card--sold">
+            <img class="product__img" src="./images/products/7.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Beige T-Shirt</h3>
+                <p class="product__price">$60.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/8.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Hat</h3>
+                <p class="product__price">$45.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="products__wrapper hidden" data-tab-content id="tab-1">
+          <div class="product__card product__card--new">
+            <img class="product__img" src="./images/products/1.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Jacket</h3>
+                <p class="product__price">$350.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/2.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Leather Jacket</h3>
+                <p class="product__price">$300.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card product__card--sale">
+            <img class="product__img" src="./images/products/3.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Outfit</h3>
+                <p class="product__price">$220.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="products__wrapper hidden" data-tab-content id="tab-2">
+          <div class="product__card">
+            <img class="product__img" src="./images/products/4.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">T-Shirt</h3>
+                <p class="product__price">$120.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/5.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Vest</h3>
+                <p class="product__price">$85.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/6.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">OTK Boots</h3>
+                <p class="product__price">$270.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="products__wrapper hidden" data-tab-content id="tab-3">
+          <div class="product__card product__card--sold">
+            <img class="product__img" src="./images/products/7.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Beige T-Shirt</h3>
+                <p class="product__price">$60.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="product__card">
+            <img class="product__img" src="./images/products/8.jpg" alt="">
+            <div class="product__info">
+              <div class="product__descr">
+                <h3 class="product__title">Black Hat</h3>
+                <p class="product__price">$45.00</p>
+              </div>
+              <div class="btn btn-buy">
+                <img src="./images/icons/cart.svg" alt="">
+              </div>
+            </div>
+            <div class="product__actions">
+              <button class="btn btn-favorite">
+                <img src="./images/icons/favorites.svg" alt="">
+              </button>
+              <button class="btn btn-view">
+                <img src="./images/icons/eye.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card hidden" data-tab-content id="tab-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ducimus fugit
+            corrupti culpa libero quam mollitia magni pariatur, quos soluta commodi porro
+            voluptatem! Voluptate nobis veniam voluptatum, quisquam et obcaecati?
+          </p>
+        </div>
+
+        <div class="card hidden" data-tab-content id="tab-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ducimus fugit
+            corrupti culpa libero quam mollitia magni pariatur, quos soluta commodi porro
+            voluptatem! Voluptate nobis veniam voluptatum, quisquam et obcaecati?
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <section class="collections">
+    <div class="collections__inner">
+      <h2 class="visually-hidden">Collections</h2>
+      <div class="collection">
+        <img src="./images/collection/man.jpg" alt="" class="collection__img">
+        <div class="collection__info">
+          <h3 class="title-big collection__title">man</h3>
+          <a href="#!" class="collection__btn">shop collection</a>
+        </div>
+      </div>
+      <div class="collection">
+        <img src="./images/collection/woman.jpg" alt="" class="collection__img">
+        <div class="collection__info">
+          <h3 class="title-big collection__title">woman</h3>
+          <a href="#!" class="collection__btn">shop collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="feedback">
+    <div class="swiper feedback-swiper">
+      <div class="swiper-wrapper feedback__wrapper">
+        <div class="swiper-slide feedback__slide">
+          <div class="feedback__slide-inner">
+            <div class="feedback__icon">
+              <img src="./images/icons/feedback.svg" alt="">
+            </div>
+            <p class="feedback__text">Accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde
+              omnis
+              iste natus error sit voluptatem.</p>
+            <img class="feedback__author" src="./images/feedback/1.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide feedback__slide">
+          <div class="feedback__slide-inner">
+            <div class="feedback__icon">
+              <img src="./images/icons/feedback.svg" alt="">
+            </div>
+            <p class="feedback__text">Accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde
+              omnis
+              iste natus error sit voluptatem.</p>
+            <img class="feedback__author" src="./images/feedback/2.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide feedback__slide">
+          <div class="feedback__slide-inner">
+            <div class="feedback__icon">
+              <img src="./images/icons/feedback.svg" alt="">
+            </div>
+            <p class="feedback__text">Accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde
+              omnis
+              iste natus error sit voluptatem.</p>
+            <img class="feedback__author" src="./images/feedback/3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide feedback__slide">
+          <div class="feedback__slide-inner">
+            <div class="feedback__icon">
+              <img src="./images/icons/feedback.svg" alt="">
+            </div>
+            <p class="feedback__text">Accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde
+              omnis
+              iste natus error sit voluptatem.</p>
+            <img class="feedback__author" src="./images/feedback/4.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide feedback__slide">
+          <div class="feedback__slide-inner">
+            <div class="feedback__icon">
+              <img src="./images/icons/feedback.svg" alt="">
+            </div>
+            <p class="feedback__text">Accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde
+              omnis
+              iste natus error sit voluptatem.</p>
+            <img class="feedback__author" src="./images/feedback/5.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <ul class="feedback__author-list">
+      <li class="feedback__author__item">
+        <img src="./images/feedback/1.png" alt="">
+      </li>
+      <li class="feedback__author__item">
+        <img src="./images/feedback/2.png" alt="">
+      </li>
+      <li class="feedback__author__item">
+        <img src="./images/feedback/3.png" alt="">
+      </li>
+      <li class="feedback__author__item">
+        <img src="./images/feedback/4.png" alt="">
+      </li>
+      <li class="feedback__author__item">
+        <img src="./images/feedback/5.png" alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="widget">
+    <div class="widget__inner">
+      <h3 class="widget__title">
+        <span>onyx</span>
+        <img src="./images/widget/decor.png" alt="">
+        <span>The flow</span>
+      </h3>
+      <a href="#!" class="btn-read-more btn-read-more--light">see more</a>
+    </div>
+
+  </div>
+  <section class="section blog">
+    <div class="container">
+      <h2 class="title blog__title">Read Our Blog Posts</h2>
+      <p class="subtitle blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing ectetur elit, sed do
+        eiusmod.</p>
+      <div class="blog__posts">
+        <div class="blog__post">
+          <img src="./images/blog/1.jpg" alt="" class="post__img">
+          <div class="post__info">
+            <ul class="post__categories">
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Fashion</a>
+              </li>
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Inspiration</a>
+              </li>
+            </ul>
+            <h3 class="post__title">Top 10 Winter Essentials For 2022 You Should Try</h3>
+            <a href="#!" class="btn-read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog__post">
+          <img src="./images/blog/2.jpg" alt="" class="post__img">
+          <div class="post__info">
+            <ul class="post__categories">
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Fashion</a>
+              </li>
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Inspiration</a>
+              </li>
+            </ul>
+            <h3 class="post__title">The Complete Communication Skills Master Class For Work</h3>
+            <a href="#!" class="btn-read-more">Read More</a>
+          </div>
+
+        </div>
+        <div class="blog__post">
+          <img src="./images/blog/3.jpg" alt="" class="post__img">
+          <div class="post__info">
+            <ul class="post__categories">
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Fashion</a>
+              </li>
+              <li class="post__category">
+                <a href="#!" class="post__category-link">Inspiration</a>
+              </li>
+            </ul>
+            <h3 class="post__title">Premium Consultant Course For You</h3>
+            <a href="#!" class="btn-read-more">Read More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section sign-up">
+    <div class="container">
+      <div class="sign-up__inner">
+        <h2 class="title sign-up__title">
+          Sing up to our newsletter for all the latest news & discounts.
+        </h2>
+        <form class="sign-up__form">
+          <input type="text" class="sign-up__input" placeholder="E-mail address">
+          <button class="btn btn-form" type="submit">
+            <img src="images/icons/arrow-right.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section artists">
+    <div class="container">
+      <div class="artists__inner">
+        <div class="artists__img">
+          <img src="./images/artists/1.jpg" alt="">
+          <img src="./images/artists/2.jpg" alt="">
+        </div>
+        <div class="artists__info">
+          <h2 class="artists__title">Meet The Artists Behind The Corsen Maria & Sophia</h2>
+          <p class="artists__subtitle">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna.</p>
+          <a href="#!" class="btn-shop artists__btn">SHOP COLLECTION</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section instagram">
+    <div class="container">
+      <h2 class="title instagram__title">Instagram</h2>
+      <p class="subtitle instagram__subtitle">Follow us on
+        <a href="#!">@qodeinteractive</a>
+      </p>
+    </div>
+    <div class="instagram__swiper">
+      <div class="swiper-wrapper instagram__wrapper">
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/6.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/7.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/6.jpg" alt="">
+        </div>
+        <div class="swiper-slide instagram__slide">
+          <img src="./images/instagram/7.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section benefits">
+    <div class="benefits__list">
+      <div class="benefits__item">
+        <img src="./images/benefits/1.svg" alt="">
+        <h3 class="benefits__title">FAST DELIVERY</h3>
+      </div>
+      <div class="benefits__item">
+        <img src="./images/benefits/2.svg" alt="">
+        <h3 class="benefits__title">FREE RETURNS</h3>
+      </div>
+      <div class="benefits__item">
+        <img src="./images/benefits/3.svg" alt="">
+        <h3 class="benefits__title">SECURE CHECKOUT</h3>
+      </div>
+      <div class="benefits__item">
+        <img src="./images/benefits/4.svg" alt="">
+        <h3 class="benefits__title">ORDER TRACKING</h3>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="./images/logo.png" alt="">
+            <p class="footer__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <h3 class="footer__nav-title">SUPPORT</h3>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Help & Contact Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Return & Refunds</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Online Stores</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <h3 class="footer__nav-title">COMPANY</h3>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">What we do</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Gift Offers</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Latest Posts</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">F.A.Q</a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <h3 class="footer__nav-title">LOCATIONS</h3>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Vienna, Hansalgasse, Austria</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">Berlin, Buschallee, Germany</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#!" class="footer__nav-link">The Piazza, London, UK</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__form">
+            <h3 class="footer__form-title">Get The Latest News</h3>
+            <form class="sign-up__form">
+              <input type="text" class="sign-up__input" placeholder="E-mail address">
+              <button class="btn btn-form" type="submit">
+                <img src="images/icons/arrow-right.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            ©2023 Qode Interactive, All Rights Reserved
+          </p>
+          <ul class="footer__socials-list">
+            <li class="footer__social-item">
+              <a href="#!" class="footer__social-link">IN</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#!" class="footer__social-link">YT</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#!" class="footer__social-link">PI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

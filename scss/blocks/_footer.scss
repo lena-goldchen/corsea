@@ -1,0 +1,107 @@
+.footer {
+  padding: 80px 0;
+  font-size: 13px;
+  line-height: 1.38;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    @include tablet {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    width: 290px;
+
+    @include tablet {
+      width: unset;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 27px;
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    line-height: 1.37;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      gap: 50px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &-title {
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__form {
+    input {
+      width: 380px;
+
+      @include tablet {
+        width: 300px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 1.42;
+    text-transform: uppercase;
+    color: var(--color-dark);
+
+
+  }
+
+  &__socials {
+    &-list {
+      display: flex;
+      gap: 38px;
+    }
+
+    &-link {
+      padding: 10px;
+    }
+  }
+}

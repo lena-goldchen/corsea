@@ -1,0 +1,17 @@
+.collections {
+  margin-bottom: 150px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    max-width: 1920px;
+    margin-inline: auto;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+}
